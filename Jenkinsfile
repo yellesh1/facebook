@@ -1,23 +1,23 @@
 pipeline {
-    
-	agent any
-/*	
-	tools {
+
+        agent any
+/*
+        tools {
         maven "maven3"
     }
-*/	
+*/
     environment {
         NEXUS_VERSION = "nexus3"
         NEXUS_PROTOCOL = "http"
-        NEXUS_URL = "172.31.40.209:8081"
-        NEXUS_REPOSITORY = "vprofile-release"
-	NEXUS_REPOGRP_ID    = "vprofile-grp-repo"
+        NEXUS_URL = "192.168.1.5:8081"
+        NEXUS_REPOSITORY = "Release"
+        NEXUS_REPOGRP_ID    = "Maven-Group"
         NEXUS_CREDENTIAL_ID = "nexuslogin"
         ARTVERSION = "${env.BUILD_ID}"
     }
-	
+
     stages{
-        
+
         stage('BUILD'){
             steps {
                 sh 'mvn clean install -DskipTests'
@@ -30,18 +30,18 @@ pipeline {
             }
         }
 
-	stage('UNIT TEST'){
+        stage('UNIT TEST'){
             steps {
                 sh 'mvn test'
             }
         }
 
-	stage('INTEGRATION TEST'){
+        stage('INTEGRATION TEST'){
             steps {
                 sh 'mvn verify -DskipUnitTests'
             }
         }
-		
+
         stage ('CODE ANALYSIS WITH CHECKSTYLE'){
             steps {
                 sh 'mvn checkstyle:checkstyle'
@@ -54,8 +54,8 @@ pipeline {
         }
 
         stage('CODE ANALYSIS with SONARQUBE') {
-          
-		  environment {
+
+                  environment {
              scannerHome = tool 'sonarscanner4'
           }
 
@@ -106,8 +106,8 @@ pipeline {
                                 type: "pom"]
                             ]
                         );
-                    } 
-		    else {
+                    }
+                    else {
                         error "*** File: ${artifactPath}, could not be found";
                     }
                 }
@@ -119,3 +119,4 @@ pipeline {
 
 
 }
+
