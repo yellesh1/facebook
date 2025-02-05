@@ -1,0 +1,314 @@
+blob:https://www.ashokit.in/69d8972b-7bcf-42dc-83b3-620ae4279e7f
+
+SS:
+
+======================
+What is scripting ?
+======================
+
+=> Scripting means set of commands we are keeping in a file for execution.
+
+=> Scripting is used to automate our daily routine work.
+
+=> For example, i want to execute below commands on daily basis
+
+        whoami
+        pwd
+        date
+        cal
+        ls -l
+
+Note: instead of executing these commands one after other manually we can keep them inside a file and we can execute that file which is called as Scripting.   
+
+=> The process of executing script file using shell is called as shell scripting. 
+
+=> Shell scripting is used to automate our daily routine works in the project.
+
+		a) take backup
+
+		b) delete temp files
+
+		c) analyze log files
+
+		d) system health check
+
+
+=> shell script files will have .sh extension
+
+	Ex : backup.sh, health-checks.sh, log-analyzer.sh
+
+
+=> Shell Script file will start with sha-bang.	
+
+============================
+what is sha-bang in linux ?
+============================
+
+=> sha-bang is used to specify which shell we should use to process our script file.
+
+Syntax : 
+
+#! /bin/bash
+
+Note: Writing sha-bang is not mandatory but recommended.
+
+============= 01 : Shell Script ===========
+
+#! /bin/bash
+
+echo "@@@@ script start @@@@"
+
+whoami
+pwd
+date
+cal
+
+echo "@@@@ script end @@@@"
+
+
+============= 02 : Shell Script ===========
+
+#! /bin/bash
+
+echo " Enter Your Name "
+
+read FNAME
+
+echo "Good Evening, $FNAME"
+
+
+============= 03 : Shell Script ===========
+
+
+#! /bin/bash
+
+echo "Enter your first name"
+
+read FNAME
+
+echo "Enter your last name"
+
+read LNAME
+
+echo "Your Fullname : $FNAME $LNAME"
+
+
+====================
+Scripting Concepts
+====================
+
+1) Variables
+
+2) Operators
+
+3) Conditional Statements (if-else)
+
+4) Looping Statements
+
+5) Command Line Args
+
+6) Functions
+
+===========
+Variables
+===========
+
+=> Variables are used to store the values
+
+=> Variables will represent data in key-value format
+
+	a=20
+	b=30
+	name=ashok
+	gender=male
+	age=30
+
+Note: We don't have data types in shell scripting.
+
+=> We have 2 types of variables
+
+	1) System Variables / Environment Variables
+
+	2) User Defind Variables
+
+Note: We can access all the environment variables using below command
+
+        $ env        
+
+=> The variables which are already defined and using by our system are called as System variables.
+
+=> The variables which we are creating based on our requirement are called as 'User Defined Variables'.
+
+            name = ashok
+            id = 101
+            age = 25
+            gender = male 
+
+Note : To access value of variable we will use below syntax
+
+		$ echo $VARIABLE_NAME
+
+# create variable using terminal
+export course=devops
+
+# get variable value
+echo $course
+
+# remove variable
+unset variable_name
+
+Note: If we use export command in terminal for setting variables then those variables will be removed once we close our terminal. These are called as temporary variables.
+
+====================================
+How to set variables permanently ?
+====================================
+
+=> We will use ".bashrc" file to set variables permanently for the user.
+
+	$ ls -la
+
+	$ cat -n .bashrc
+
+
+# open .bashrc
+vi .bashrc
+
+# add variables at end of the file
+COURSE=devops
+TRAINER=ashok
+
+# apply .bashrc changes
+source .bashrc
+
+# Access variables
+echo $COURSE
+echo $TRAINER
+
+Note: In linux machine, every user will contain their own .bashrc file in user home directory.
+
+==========================
+Rules for Variables name
+==========================
+
+=> Variable name should not start with digit
+
+	Ex: 123name (invalid)
+	    name1 (valid)
+
+=> Variable name should not contain below 3 special symbols
+
+	Ex:  - (hyper), @, #
+
+Note: It is recommended to use uppercase characters for variable names.
+
+	name1 ==> NAME1
+
+	age ==> AGE	
+
+
+============
+Operators
+============	
+
+=> Operators are used to perform some operation on the variables.	
+
+	10 + 20 ==> 30
+
+	10 > 20 ==> false
+
+	25 == 25 ==> true
+
+========================
+Arithematic Operators
+========================	
+
+Addition : + 
+
+Substraction : -
+
+Multiplication : *
+
+Division : /
+
+Modulas : %
+
+
+Syntax to perform Arithematic Operations : $((VAR1 + VAR2))
+
+================== 04 : Script (addition) ================
+
+#! /bin/bash
+
+echo "Enter First Number"
+
+read FNUM
+
+echo "Enter Second Number"
+
+read SNUM
+
+echo "Result : $((FNUM+SNUM))"
+
+===================================
+Relational/Comparision Operators
+===================================
+
+Equals  (== (or) eq)
+
+Not Equals (!=)
+
+Greater Than (> (or) gt (or) ge)
+
+Less Than :: < (or) lt (or) le
+
+===================
+Conditional Stmts
+===================
+
+=> Conditional statements are used to execute commands based on condition.
+
+Ex : 
+
+read AGE
+
+if age is above 18 years then print msg as "eligible for vote"
+
+if age is below 18 years then print msg as "not-elgible for vote"
+
+=> To implement conditional stmts we will use "if-elif-else"
+
+
+Syntax :
+
+if [ condition-1 ]; then
+
+	// stmts
+
+elif [ condition-2 ]; then
+
+	//stmts
+
+else 
+	// stmts	
+
+================== 05 : Script ( if-else) ================
+
+#! /bin/bash
+
+echo "Enter age"
+
+read AGE
+
+if [ $AGE -ge 18 ]; then
+  echo "Eligible For Vote"
+else
+  echo "Not Eligible for Vote"
+fi
+
+========================================
+
+Requirement : Take a number from user and check given number is even or odd
+
+Requirement : Take a number from user and check weather it is positive or negative or zero
+
+=========================================
