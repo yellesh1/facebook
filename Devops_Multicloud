@@ -1,0 +1,362 @@
+Day - 01 : DevOps with Multi Cloud Video : https://youtu.be/wd8JtwI0Gok
+https://classroom.google.com/c/NzQ3ODAwOTQ1Njg1/p/NzQ4NDI5NDY0NDg3?pli=1
+
+
+Skip to main content
+Google Classroom
+Classroom
+DevOps with Multi Cloud - B
+  
+Home
+Calendar
+Enrolled
+To-do
+D
+DevOps with Multi Cloud - B
+D
+DevOps with Multi Cloud - A
+Archived classes
+Settings
+Announcement
+Ashok IT
+•
+Feb 3 (Edited Yesterday)
+Day - 01 : DevOps with Multi Cloud Video : https://youtu.be/wd8JtwI0Gok
+
+01-DevOps-Multi-Cloud.txt
+Text
+1 class comment
+
+kishor MoreFeb 3
+Yes
+========================
+DevOps with Multi Cloud
+========================
+
+1) Who is your trainer
+
+2) Pre-Requisites
+
+3) Course Content
+
+4) Course Details
+
+5) Q & A
+
+
+=============
+Trainer Info
+=============
+
+Name : Mr. Ashok
+
+IT Exp : 11+ Yrs
+
+Role : Project Manager
+
+Training Exp: 8 Years
+
+Ashok IT started in 2020
+
+Skills : Java + DevOps + Cloud + Linux
+
+
+===============
+Pre-Requisites
+===============
+
+=> 4 Months of time
+
+=> Real Intrest to become DevOps engineer
+
+=> Time for Daily Practice
+
+=========================================
+Who are eligible to attend this course ?
+=========================================
+
+1) Experienced IT professional
+
+2) Non-IT people
+
+3) Career Gap people
+
+4) Freshers
+
+Note: DevOps fresher openings are very less in the market.
+
+===============
+Course Content
+===============
+
+Module-1 : Software Projet Life Cycle
+
+          - Waterfall Model
+          - Agile Model
+          - What is DevOps & Why 
+          - DevOps life cycle
+          - Roles & Responsibilities of DevOps engineer
+
+Module-2 : Linux OS with Shell Scripting
+
+Module-3 : AWS Cloud (10+ Services)
+
+Module-4 : DevOps Tools ( 15+ Tools)
+
+Module-5 : DevOps Projects Setup
+
+Module-6 : Azure Cloud 
+
+Module-7 : GCP Cloud
+
+Module-8 : Interview Guidance
+
+          - Resume Preparation
+          - Mock Intervews
+          - Placement Assistance
+
+
+==============
+DevOps Tools  
+==============
+1) Maven
+2) Gradle
+3) Git Hub & Bitbucket
+4) SonarQube
+5) Nexus / JFrog
+6) Tomcat
+7) Jenkins CI CD
+8) Docker
+9) Kubernetes 
+10) Grafana & Promethues
+11) ELK Stack
+12) Terraform
+13) Ansible
+14) Trivy
+15) JIRA    
+
+=============
+AWS Services
+=============
+1) EC2 : Virutal Machines setup
+2) EBS : Block storage device for VM
+3) S3 : Unlimited storage
+4) RDS : Relational Databases
+5) IAM : Identity & Access Management
+6) VPC : Virtual Private Cloud
+7) CloudWatch : Resources Monitoring
+8) SNS : Notifications
+9) Beanstack : Web App mgmt
+10) Lambdas : Serverless computing
+11) Route53 : DNS
+12) EKS : Elastic K8S Service
+
+=======
+Azure
+=======
+
+1) Azure Architecture
+2) Azure VM
+3) Azure Storage
+4) Azure Virtual Network (Vnet)
+5) Azure IAM
+6) Azure Monitoring
+7) Azure Automation (Azure CLI, Azure SKD, Bicep)
+8) Azure Terraform
+9) App deployments in Azure
+10) AKS : Azure K8S service
+
+==========
+GCP Cloud
+==========
+
+1) GCP Architecture
+2) GCP Dashboard
+3) GCP Networking
+4) GCP Vms
+5) GCP Databases
+6) GCP Object Storage
+7) Security in GCP
+8) GKE (Google K8S Engine)
+9) Application deployments in GCP 
+
+
+Bonus : Python Scripting classes    
+
+
+===============
+Course Details
+===============
+
+Course Name : DevOps with Multi Cloud (AWS + Azure + GCP)
+
+Start date : Today
+
+Duration : 4 Months
+
+Note : Daily class notes + backup videos (1 year access) will be provided 
+
+Placement Referrals
+
+Certification Guidance
+
+Course Fee : 
+
+Linux + DevOps with AWS : 16, 000 INR 
+
+Linux + DevOps with Multi Cloud : 20,000 INR
+
+Class Timings : 7:00 PM to 8:30 PM IST (DevOps with AWS)
+
+Note: Attend 5 free sessions with same zoom link
+
+Note: Classes will be there from Mon-Fri
+
+
+==================================
+Module-1 : DevOps introduction
+==================================
+
+1) What is Software Project 
+
+2) Why to develop software projects
+
+3) How many types of software projects available
+
+4) What is the architecture of software project (layers)
+
+5) Tech Stack of software project
+
+====================
+Q) Software Project 
+====================
+
+=> Collection of software programs is called as Software Project.
+
+=> To develop software programs we will use programming languages.
+
+        Ex: C, C++, Java, Python, C# DOT Net...
+
+==========================================
+Q) Why to develop software project ?
+==========================================        
+
+=> Software projects are used to reduce human efforts and simplify humans life.
+
+        1) IRCTC for train tickets booking
+
+        2) Netbanking for banking operations
+
+        3) Amazon, Flipkart etc for online shopping
+        
+        4) Swiggy, zomoto for food orders
+
+============================
+Types of software projects
+============================
+
+1) Desktop applications / Stand-Alone applications
+
+2) Web Applications
+
+3) Mobile Applications  
+
+
+=> Desktop applications will execute only in one system. Only one user can access at a time.
+
+Ex : OS, Calculator, Hospital Billing s/w, Super Market Billing s/w ...
+
+
+=> Web Applications can be accessed by multiple users at a time with internet.
+
+Ex: gmail, youtube, linkedin, facebook, ashokit
+
+=> Mobile applications are used to run in mobiles   
+
+Ex : whatsapp, instagram app, fb messenger, flipkart app, amazon app
+
+================================
+Software Project Architecture   
+================================
+
+=> Software application divided into 3 layers / parts   
+
+        1) Frontend
+
+        2) Backend
+
+        3) Database
+
+=> Front end contains user interface (presentation layer).
+
+    ## Frontend Technologies : Angular, React JS, Vue JS
+
+=> Backend contains business logic of our application (Business layer).
+
+    Ex: send email, send OTP, validate login credentials...
+
+    ## Backend Technologies : Java, Python, DOT Net, Node JS, PHP...
+
+=> Database is used to store the data permanently.
+
+    Ex: Oracle, MySQL, SQL Server, PostGres, Mongo DB...
+
+========================
+Application Tech Stack  
+========================
+
+App-1 : Angular + Java + Oracle
+
+App-2 : React JS + Java + Mongo DB
+
+App-3 : Angular + Python + MySQL
+
+App-4 : React JS + Dot Net + SQL Server
+
+App-5 : Angular + Dot Net + SQL Server
+
+App-6 : React JS + Node JS + Mongo DB (MERN)
+
+======================
+Teams in the project
+======================
+
+1) Business Team (Functional Team)
+
+2) Development Team
+
+3) Testing Team
+
+4) Operations Team (DevOps)
+
+
+=> Busines team is responsible to get requirements from the client and give it to Development team.
+
+=> Development Team is responsible for coding (develop the project).
+
+=> Testing team is responsible to verify project is working as expected or not.
+
+=> Operations team (DevOps) is responsible for below activites
+
+        1) Infrastructure Setup
+
+            Ex: Machines, Servers, Storage, Network, Security..
+
+        2) Configuration Management
+
+            Ex: install s/w, copy files etc...
+
+        3) Project Code Reviews
+
+        4) Build & Deployment
+
+        5) Appliation Release / Delivery
+
+        6) Monitoring  (infrastructure & application)
+
+
+=============================
+What is DevOps & Why DevOps
+=============================
+01-DevOps-Multi-Cloud.txt
+Displaying 01-DevOps-Multi-Cloud.txt.
